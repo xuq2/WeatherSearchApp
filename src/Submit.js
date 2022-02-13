@@ -93,10 +93,10 @@ function Submit({ query }) {
                 <Card.Body>
                   <Card.Title>{data[0].weather[0].description.toUpperCase()}</Card.Title>
                   <Card.Text>
-                    <p><FontAwesomeIcon icon={faTemperatureHigh} size="xl" fixedWidth beat/> {data[0].temp.max}°C</p>
-                    <p><FontAwesomeIcon icon={faTemperatureLow} size="xl" fixedWidth swapOpacity/> {data[0].temp.min}°C</p>
-                    <p><FontAwesomeIcon icon={faCloudRain} size="xl" fixedWidth fade={data[0].pop}/> {data[0].pop}</p>
-                    <p><FontAwesomeIcon icon={faWind} size="xl" fixedWidth/> {data[0].clouds}</p>
+                    <p><FontAwesomeIcon icon={faTemperatureHigh} size="xl" fixedWidth beat/> {data[0].temp.max} °C</p>
+                    <p><FontAwesomeIcon icon={faTemperatureLow} size="xl" fixedWidth swapOpacity/> {data[0].temp.min} °C</p>
+                    <p><FontAwesomeIcon icon={faCloudRain} size="xl" fixedWidth fade={data[0].pop}/> {(data[0].pop*100).toFixed(0)} %</p>
+                    <p><FontAwesomeIcon icon={faWind} size="xl" fixedWidth/> {data[0].clouds} m/s</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
