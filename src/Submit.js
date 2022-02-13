@@ -50,7 +50,7 @@ function Submit({ query }) {
   const weatherIcon = css`
     background-image: url(https://openweathermap.org/img/wn/50d@4x.png);
   `
-
+  console.warn = () => {};
   return (
     <>
     <Global styles={globalStyles}/>

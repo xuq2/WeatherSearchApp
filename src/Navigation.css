@@ -6,3 +6,30 @@
 .sun {
     width: 20%;
 }
+@media (max-width: 990px) {
+    .txt {
+        font-size: 24px;
+        margin-right: 50px;
+    }
+    .sun {
+        width: 50%;
+    }
+}
+@media (max-width: 560px) {
+    .txt {
+        font-size: 24px;
+        margin-right: 50px;
+    }
+    .sun {
+        width: 60%;
+    }
+}
+@media (max-width: 430px) {
+    .txt {
+        font-size: 18px;
+    }
+    .sun {
+        width: 70%;
+    }
+}
+
