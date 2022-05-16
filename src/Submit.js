@@ -81,7 +81,7 @@ function Submit({ query }) {
             </InputGroup>
           </form>
         </Row>
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-md-center content">
           {loading ? (
             <Spinner />
           ) : (
